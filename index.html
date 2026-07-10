@@ -1,508 +1,527 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Arellano Arbitraje | Domina el Arbitraje de Criptomonedas</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container-low": "#f2f4f6",
-                    "on-secondary-container": "#684000",
-                    "on-primary": "#ffffff",
-                    "surface": "#f7f9fb",
-                    "outline-variant": "#c6c6cd",
-                    "on-tertiary-fixed-variant": "#005236",
-                    "on-error": "#ffffff",
-                    "on-background": "#191c1e",
-                    "surface-dim": "#d8dadc",
-                    "inverse-on-surface": "#eff1f3",
-                    "outline": "#76777d",
-                    "on-error-container": "#93000a",
-                    "primary": "#000000",
-                    "secondary-fixed": "#ffddb8",
-                    "primary-fixed": "#dae2fd",
-                    "inverse-surface": "#2d3133",
-                    "primary-fixed-dim": "#bec6e0",
-                    "on-primary-fixed": "#131b2e",
-                    "surface-container": "#eceef0",
-                    "surface-bright": "#f7f9fb",
-                    "on-tertiary": "#ffffff",
-                    "surface-container-high": "#e6e8ea",
-                    "surface-variant": "#e0e3e5",
-                    "on-tertiary-container": "#009668",
-                    "surface-tint": "#565e74",
-                    "on-tertiary-fixed": "#002113",
-                    "on-surface": "#191c1e",
-                    "surface-container-lowest": "#ffffff",
-                    "tertiary-container": "#002113",
-                    "tertiary-fixed-dim": "#4edea3",
-                    "secondary-fixed-dim": "#ffb95f",
-                    "surface-container-highest": "#e0e3e5",
-                    "error": "#ba1a1a",
-                    "on-primary-container": "#7c839b",
-                    "tertiary": "#000000",
-                    "secondary": "#855300",
-                    "on-secondary-fixed": "#2a1700",
-                    "primary-container": "#131b2e",
-                    "on-primary-fixed-variant": "#3f465c",
-                    "secondary-container": "#fea619",
-                    "error-container": "#ffdad6",
-                    "on-surface-variant": "#45464d",
-                    "inverse-primary": "#bec6e0",
-                    "on-secondary-fixed-variant": "#653e00",
-                    "tertiary-fixed": "#6ffbbe",
-                    "background": "#f7f9fb",
-                    "on-secondary": "#ffffff"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "container-max": "1280px",
-                    "stack-lg": "48px",
-                    "stack-sm": "12px",
-                    "base": "8px",
-                    "margin-mobile": "16px",
-                    "gutter": "24px",
-                    "stack-md": "24px"
-            },
-            "fontFamily": {
-                    "headline-md": ["Lexend"],
-                    "headline-xl": ["Lexend"],
-                    "label-caps": ["JetBrains Mono"],
-                    "headline-lg": ["Lexend"],
-                    "body-md": ["Inter"],
-                    "body-lg": ["Inter"],
-                    "button": ["Lexend"],
-                    "headline-xl-mobile": ["Lexend"]
-            },
-            "fontSize": {
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "button": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
-                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .tonal-card {
-            background-color: white;
-            border: 1px solid #E2E8F0;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .tonal-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
-            transform: translateY(-2px);
-        }
-        .glass-header {
-            backdrop-filter: blur(12px);
-            background-color: rgba(247, 249, 251, 0.85);
-        }
-    </style>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Capital Smart — Educación financiera práctica y formación en marketing. Tomá decisiones más inteligentes con tu dinero. Respaldado por León Capital LLC."/>
+  <meta name="theme-color" content="#0D0D0D"/>
+  <title>Capital Smart — Educación Financiera y Formación en Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@600&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" type="image/png" href="logo.png"/>
 </head>
-<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-16 glass-header border-b border-outline-variant">
-<div class="font-headline-md text-headline-md font-bold text-primary">Arellano Arbitraje</div>
-<nav class="hidden md:flex space-x-gutter items-center">
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors" href="#servicios">Servicios</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors" href="#beneficios">Beneficios</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-secondary transition-colors" href="#testimonios">Testimonios</a>
-<a class="bg-secondary-container text-on-secondary-container font-button text-button px-6 py-2 rounded-lg active:scale-95 transition-transform duration-200" href="https://wa.me/#">WhatsApp</a>
-</nav>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</header>
-<main class="mt-16">
-<!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center pt-stack-lg pb-stack-lg overflow-hidden">
+<body>
 
-<div class="container mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center relative z-10">
-<div class="flex flex-col space-y-stack-md">
-<div class="inline-flex items-center space-x-2 bg-secondary-container/10 px-4 py-2 rounded-full w-fit">
-<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
-<span class="font-label-caps text-label-caps text-secondary">Metodología Probada</span>
-</div>
-<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary leading-tight">
-                        Aprende a generar entre <span class="text-secondary">250 a 2500 USD</span> en 60 días.
-                    </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                        Domina el arbitraje de criptomonedas y cambio de divisas con una metodología paso a paso y acompañamiento real de expertos.
-                    </p>
-<div class="flex flex-col sm:flex-row gap-4 pt-4">
-<a class="bg-secondary-container text-on-secondary-container font-button text-button px-8 py-4 rounded-lg flex items-center justify-center space-x-2 hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-secondary-container/20" href="https://wa.me/#">
-<span class="material-symbols-outlined">chat</span>
-<span>Quiero empezar ahora</span>
-</a>
-<div class="flex items-center space-x-4">
-<div class="flex -space-x-2">
-<div class="w-10 h-10 rounded-full border-2 border-surface bg-gray-200 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A portrait of a satisfied young professional smiling warmly, styled in a clean modern financial aesthetic with soft natural lighting and a blurred professional background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBpWGgt3YSxz2ua9jPTgT4AJE7-prH6ju_DVqggRM7WNfc7sYNGPiK07HPOzl4lIl8t6y3PjTgEQtRODLsPN4Fehvw6Glmwc3X9r6sv50cDkSuZJOdOPOhysI3SFHWQyO3RyRCC6LqaITy7Gpz3oFgai7fYG8snf9asE-Ppg6whcx6ylSR2gAYyo1N47viedZDHjSLnF-XlNc0qB728zt2drX4H2MwfcSiRzLyOqbGjyzntsxJ6Ypk"/>
-</div>
-<div class="w-10 h-10 rounded-full border-2 border-surface bg-gray-300 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Close up of a focused individual looking at digital graphs on a sleek modern tablet, soft blue and navy lighting, professional and high-tech vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeIvfuSSc0RdyxaAvZ8kHMmdtFQ7TobX8fQYi-873_yTMdtcR8kOoqOW8cY1vhxjsRi_3xcCr8Po4a81_QEZ9-rlfKEsYUWCb_aZ5GVM_FVWenWh9V0c9H9Z8idSHFiiufBuCGLmD-BFXW2xb8_sEkdFXkMWn2QC2eMUjE_OxF0CYXUHvUVQcn-rfEFKEIMHsQNoqPgte7Wjr5tT0Sb_nMa2IV0HMB94K9mpAgVHOlHI4GTfKWL_np"/>
-</div>
-</div>
-<span class="font-label-caps text-label-caps text-on-surface-variant">+500 Alumnos Activos</span>
-</div>
-</div>
-</div>
-<div class="relative">
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
-<div class="relative rounded-2xl overflow-hidden border-l-4 border-primary shadow-2xl">
-<img class="w-full h-auto" data-alt="A high-quality professional photograph of Axel Arellano, a young financial entrepreneur, in a modern tech-driven office setting with multiple monitors displaying trading charts in the background. The lighting is crisp and professional, using a corporate modern palette of navy and white with amber accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf_Az2yoNQ-WeNb1OK4CecbLzjNuNh2V1AWywqjvEjxCqISxZjZhwhCPYBH9cnNN91sqMMqrEBjF37SMXmC0Ku84X8CLLLAtaosh9vQppCVg92Nt82ZSmnomplPsJuvCoXOiWXYHD-8PoLAtccYPGtsCcncOMtk7ViAXW57zM0xDuqQ_kB07dbMEmrgBrDFNdqC4Cd8z1C_jMTWHP3P3XvAI5oPfQho748Zmxz7fGdntRzK9KAdhgi"/>
-<div class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur px-4 py-2 rounded-lg border border-outline-variant flex items-center space-x-2">
-<span class="w-3 h-3 bg-tertiary-fixed-dim rounded-full animate-pulse"></span>
-<span class="font-label-caps text-label-caps">Mentoría en Vivo Hoy</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Presentation Section -->
-<section class="py-stack-lg bg-surface-container-low">
-<div class="container mx-auto px-margin-mobile md:px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-center">
-<div class="md:col-span-5">
-<div class="space-y-stack-md">
-<h2 class="font-headline-lg text-headline-lg text-primary">Quién es Axel Arellano y por qué Arellano Arbitraje.</h2>
-<div class="w-16 h-1 bg-secondary rounded-full"></div>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                                Arellano Arbitraje nace de la necesidad de profesionalizar el mercado de criptoactivos. Bajo el respaldo legal de <strong>León Capital LLC</strong>, nuestra misión es transformar vidas a través del conocimiento financiero aplicado.
-                            </p>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                                No enseñamos solo teoría. Enseñamos la habilidad real que me permitió alcanzar mi independencia financiera. Nos enfocamos en la <strong>experiencia práctica</strong>, el acompañamiento uno a uno y la seguridad en cada operación.
-                            </p>
-<div class="flex items-center space-x-4 pt-4">
-<div class="bg-primary-container p-3 rounded-lg text-on-primary-container">
-<span class="material-symbols-outlined text-3xl">shield</span>
-</div>
-<div>
-<p class="font-label-caps text-label-caps text-primary">Seguridad Jurídica</p>
-<p class="text-sm text-on-surface-variant">Respaldo por León Capital LLC</p>
-</div>
-</div>
-</div>
-</div>
-<div class="md:col-span-7 grid grid-cols-2 gap-4">
-<div class="space-y-4 pt-12">
-<div class="tonal-card p-6 rounded-xl border-l-4 border-primary">
-<h3 class="font-headline-md text-headline-md text-primary">+3 Años</h3>
-<p class="text-sm text-on-surface-variant">Operando el mercado diariamente</p>
-</div>
-<div class="tonal-card p-6 rounded-xl border-l-4 border-secondary">
-<h3 class="font-headline-md text-headline-md text-primary">100%</h3>
-<p class="text-sm text-on-surface-variant">Enfoque en resultados reales</p>
-</div>
-</div>
-<div class="space-y-4">
-<div class="tonal-card p-6 rounded-xl border-l-4 border-tertiary-fixed-dim">
-<h3 class="font-headline-md text-headline-md text-primary">+500</h3>
-<p class="text-sm text-on-surface-variant">Estudiantes capacitados</p>
-</div>
-<div class="tonal-card p-6 rounded-xl bg-primary-container text-on-primary-container">
-<h3 class="font-headline-md text-headline-md">24/7</h3>
-<p class="text-sm text-on-primary-fixed-variant">Comunidad de apoyo activa</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="py-stack-lg bg-surface" id="servicios">
-<div class="container mx-auto px-margin-mobile md:px-gutter">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Formación y Mentoría a tu medida.</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Selecciona el nivel de acompañamiento que necesitas para acelerar tus resultados.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Service 1 -->
-<div class="tonal-card p-8 rounded-2xl flex flex-col h-full border-t-4 border-primary">
-<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">AUTO-DIRIGIDO</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Curso Arbitraje de 0 a 100</h3>
-<ul class="space-y-3 mb-8 flex-grow">
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>14 módulos de video HD</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Clases semanales en vivo</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Acceso de por vida</span>
-</li>
-</ul>
-<a class="w-full py-3 border border-primary text-primary font-button text-button rounded-lg text-center hover:bg-primary-container hover:text-white transition-colors" href="https://wa.me/#">Consultar por WhatsApp</a>
-</div>
-<!-- Service 2 (Featured) -->
-<div class="tonal-card p-8 rounded-2xl flex flex-col h-full border-4 border-secondary-container relative transform md:scale-105 z-10 shadow-xl">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">MÁS SOLICITADO</div>
-<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">PERSONALIZADO</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Mentoría 1 a 1</h3>
-<ul class="space-y-3 mb-8 flex-grow">
-<li class="flex items-start space-x-3 text-sm font-bold">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Acompañamiento intensivo</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>4 sesiones privadas mensuales</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Plan de capitalización a medida</span>
-</li>
-</ul>
-<a class="w-full py-4 bg-secondary-container text-on-secondary-container font-button text-button rounded-lg text-center hover:brightness-110 shadow-lg shadow-secondary-container/30 transition-all" href="https://wa.me/#">Consultar por WhatsApp</a>
-</div>
-<!-- Service 3 -->
-<div class="tonal-card p-8 rounded-2xl flex flex-col h-full border-t-4 border-primary">
-<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">HÍBRIDO</span>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Combo: Full Experience</h3>
-<ul class="space-y-3 mb-8 flex-grow">
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Curso Completo (14 módulos)</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>3 clases privadas 1 a 1</span>
-</li>
-<li class="flex items-start space-x-3 text-sm">
-<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-<span>Certificado de finalización</span>
-</li>
-</ul>
-<a class="w-full py-3 border border-primary text-primary font-button text-button rounded-lg text-center hover:bg-primary-container hover:text-white transition-colors" href="https://wa.me/#">Consultar por WhatsApp</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Differentials Grid -->
-<section class="py-stack-lg bg-primary-container text-on-primary" id="beneficios">
-<div class="container mx-auto px-margin-mobile md:px-gutter">
-<div class="mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg mb-2">Por qué elegir nuestra metodología.</h2>
-<p class="text-on-primary-container">Algorithmic Precision meets Empowered Wealth.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">analytics</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Paso a paso</h4>
-<p class="text-sm text-on-primary-container">Desde la creación de tu cuenta hasta el retiro de ganancias.</p>
-</div>
-</div>
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">groups</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Comunidad Activa</h4>
-<p class="text-sm text-on-primary-container">Acceso a un grupo exclusivo de WhatsApp con alertas reales.</p>
-</div>
-</div>
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">update</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Actualización</h4>
-<p class="text-sm text-on-primary-container">El mercado cambia, nosotros evolucionamos nuestras estrategias.</p>
-</div>
-</div>
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">psychology</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Habilidad Real</h4>
-<p class="text-sm text-on-primary-container">Aprende a pescar, no solo esperes el pescado.</p>
-</div>
-</div>
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">rocket_launch</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Práctica Pura</h4>
-<p class="text-sm text-on-primary-container">Clases 100% aplicadas a la operativa real diaria.</p>
-</div>
-</div>
-<div class="flex space-x-4 p-4 hover:bg-on-primary-container/10 rounded-xl transition-colors">
-<div class="shrink-0 w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-<span class="material-symbols-outlined">support_agent</span>
-</div>
-<div>
-<h4 class="font-headline-md text-headline-md mb-1 text-white">Acompañamiento</h4>
-<p class="text-sm text-on-primary-container">Soporte directo para resolver dudas en tiempo récord.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials Section -->
-<section class="py-stack-lg bg-surface-container-low overflow-hidden" id="testimonios">
-<div class="container mx-auto px-margin-mobile md:px-gutter">
-<div class="text-center mb-stack-lg">
-<h2 class="font-headline-lg text-headline-lg text-primary">Resultados que hablan por nosotros.</h2>
-<p class="text-on-surface-variant">Pruebas reales de nuestra comunidad en Instagram y Wisboo.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
-<div class="tonal-card p-6 rounded-xl flex flex-col space-y-4">
-<div class="flex items-center space-x-1 text-secondary">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant">"Gracias a Axel logré mis primeros 300 USD operando solo por la mañana. La metodología es clarísima."</p>
-<div class="flex items-center space-x-3 pt-4 border-t border-outline-variant">
-<div class="w-10 h-10 bg-secondary-fixed rounded-full flex items-center justify-center font-bold text-on-secondary-fixed">M.G</div>
-<span class="font-label-caps text-label-caps">Matias G. - Alumno</span>
-</div>
-</div>
-<div class="tonal-card p-6 rounded-xl flex flex-col space-y-4">
-<div class="flex items-center space-x-1 text-secondary">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant">"Lo que más valoro es el acompañamiento. No te sentís solo en ningún momento de la operación."</p>
-<div class="flex items-center space-x-3 pt-4 border-t border-outline-variant">
-<div class="w-10 h-10 bg-primary-fixed rounded-full flex items-center justify-center font-bold text-on-primary-fixed">S.R</div>
-<span class="font-label-caps text-label-caps">Sofía R. - Mentoreada</span>
-</div>
-</div>
-<div class="tonal-card p-6 rounded-xl flex flex-col space-y-4">
-<div class="flex items-center space-x-1 text-secondary">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="italic text-on-surface-variant">"Empecé de cero total y en 45 días ya recuperé la inversión del curso. Recomendado 100%."</p>
-<div class="flex items-center space-x-3 pt-4 border-t border-outline-variant">
-<div class="w-10 h-10 bg-tertiary-fixed rounded-full flex items-center justify-center font-bold text-on-tertiary-fixed">J.L</div>
-<span class="font-label-caps text-label-caps">Juan L. - Alumno</span>
-</div>
-</div>
-</div>
-<div class="mt-stack-lg flex flex-wrap justify-center gap-4 opacity-50">
-<img class="h-32 rounded-lg grayscale hover:grayscale-0 transition-all" data-alt="A collage of high-quality screenshots from an Instagram profile page showcasing trading results, profit messages, and happy student feedback. The aesthetic is clean, modern, and trustworthy, with subtle navy overlays." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ck2XV2txKMoGg56ChmHWW0CzlUFu2KMeMXwpQ8QKFVvg4RHB-bcBgxEcCSogoHu4hnUdlN_woUYiydh4f-0bnVI40qe0vlioNzBd4PcoUM4P20nFC6043YAlh3E0m9T1owmqRetMSUWbyGD_53LWionFpHeSe44Q_G2P41yNOI66YpooY3j6sA-qApjNy_sq2mPj_w1XO6ZbKXk7R9xUaRIFYiBZ08hsh6jdU14p29olWPMiGgBh"/>
-<img class="h-32 rounded-lg grayscale hover:grayscale-0 transition-all" data-alt="Screenshots from a professional learning management system dashboard like Wisboo, showing progress bars, module lists, and student engagement graphs in a bright light-mode UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3uEIGDQA8-65CY0evVEMrdWxnVFg_9s1bwcG8iI_5YPhCIxAIKuUStkiSZ_VIE9mLTtkpe3jVG66VeVpRecwMdoZpcSSMFZZl6z5sI2VYf9rqy7pwtWrz-b_KSLqeB2PojCrP5Ucy2NPL58yv4G6gtrwaVvXHzjC8b9GRc5DbZRMFUvWkWLegRpWVlwkmME5e_JA27cQWJId3KLz3n-uzy2MIzOsnCv7mumKwyn3Ma8djqIZOAxNM"/>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section class="py-stack-lg bg-surface relative overflow-hidden">
-<div class="container mx-auto px-margin-mobile md:px-gutter text-center relative z-10">
-<div class="max-w-3xl mx-auto space-y-stack-md">
-<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">¿Listo para dar el primer paso hacia tu libertad financiera?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant">No dejes para mañana los ingresos que puedes empezar a construir hoy mismo con arbitraje profesional.</p>
-<div class="pt-base">
-<a class="inline-flex items-center space-x-3 bg-secondary-container text-on-secondary-container font-button text-headline-md px-10 py-5 rounded-xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-secondary-container/20" href="https://wa.me/#">
-<span class="material-symbols-outlined text-2xl">rocket</span>
-<span>Hablar con un asesor</span>
-</a>
-</div>
-<div class="flex flex-col space-y-2 mt-stack-md pt-stack-md border-t border-outline-variant/30">
-<p class="font-label-caps text-[10px] text-outline">[PENDIENTE] Número de teléfono oficial</p>
-<p class="font-label-caps text-[10px] text-outline">[PENDIENTE] Dirección de oficinas físicas</p>
-</div>
-</div>
-</div>
-<div class="absolute inset-0 pointer-events-none">
-<div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary-container/5 via-transparent to-transparent"></div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-stack-lg px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-3 gap-stack-md bg-primary-container text-on-primary-container">
-<div class="space-y-4">
-<div class="font-headline-md text-headline-md font-bold text-on-primary-container">Arellano Arbitraje</div>
-<p class="font-body-md text-body-md opacity-80">La escuela líder en formación de arbitraje de criptomonedas y divisas de alto rendimiento.</p>
-</div>
-<div class="space-y-4">
-<p class="font-label-caps text-label-caps text-white">Legal</p>
-<p class="font-body-md text-body-md opacity-60">© 2024 Arellano Arbitraje. Propiedad de León Capital LLC. Todos los derechos reservados.</p>
-<div class="flex flex-col space-y-2">
-<a class="text-sm hover:text-on-primary transition-colors" href="#">Términos y Condiciones</a>
-<a class="text-sm hover:text-on-primary transition-colors" href="#">Privacidad</a>
-</div>
-</div>
-<div class="space-y-4">
-<p class="font-label-caps text-label-caps text-white">Contacto</p>
-<div class="flex flex-col space-y-3">
-<a class="flex items-center space-x-2 hover:text-on-primary transition-colors" href="https://instagram.com/axelarellano.ok">
-<span class="material-symbols-outlined text-sm">link</span>
-<span>Instagram (@axelarellano.ok)</span>
-</a>
-<a class="flex items-center space-x-2 hover:text-on-primary transition-colors" href="mailto:axelarellano20203@gmail.com">
-<span class="material-symbols-outlined text-sm">mail</span>
-<span>Email (axelarellano20203@gmail.com)</span>
-</a>
-</div>
-</div>
-</footer>
-<script>
-        // Smooth reveal animations for cards
-        const observerOptions = {
-            threshold: 0.1
-        };
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-4');
-                }
-            });
-        }, observerOptions);
+  <!-- Header -->
+  <header class="header" role="banner">
+    <a class="header__logo" href="#" aria-label="Capital Smart — Inicio">
+      <img src="logo.png" alt="Logo Capital Smart" width="40" height="40"/>
+      <span>Capital Smart</span>
+    </a>
 
-        document.querySelectorAll('.tonal-card').forEach(card => {
-            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
-            observer.observe(card);
-        });
+    <nav class="header__nav" aria-label="Navegación principal">
+      <a class="header__link" href="#sobre">Sobre nosotros</a>
+      <a class="header__link" href="#servicios">Servicios</a>
+      <a class="header__link" href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
 
-        // Sticky header transition
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 20) {
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('shadow-md');
-            }
-        });
-    </script>
-</body></html>
+    <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" aria-label="Menú móvil">
+    <a class="header__link" href="#sobre">Sobre nosotros</a>
+    <a class="header__link" href="#servicios">Servicios</a>
+    <a class="header__link" href="#faq">FAQ</a>
+    <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ==========================================
+         HERO — Propuesta de valor + CTA
+         ========================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <div class="hero__badge reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <span class="label">Educación financiera práctica</span>
+          </div>
+
+          <h1 class="heading-xl reveal reveal-delay-1" id="hero-title">
+            Tomá decisiones más <span class="accent">inteligentes</span> con tu dinero.
+          </h1>
+
+          <p class="body-lg reveal reveal-delay-2" style="color:var(--color-text-secondary); max-width:540px;">
+            Capital Smart te ayuda a ordenar tus finanzas, mejorar tu capacidad de ahorro y desarrollar habilidades para aumentar tus ingresos. Todo respaldado por León Capital LLC.
+          </p>
+
+          <div class="hero__actions reveal reveal-delay-3">
+            <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="currentColor"/></svg>
+              Hablar por WhatsApp
+            </a>
+            <div class="hero__social-proof">
+              <div class="hero__avatars">
+                <div class="hero__avatar" style="background:#D4B96A; color:#0D0D0D;">A</div>
+                <div class="hero__avatar" style="background:#A8893D; color:#FFFFFF;">C</div>
+                <div class="hero__avatar" style="background:#0D0D0D; color:#C9A84C;">M</div>
+              </div>
+              <span class="label" style="color:var(--color-text-muted);">Comunidad activa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal-delay-2">
+          <div class="hero__image-wrap">
+            <img src="img/unnamed.jpg" alt="Persona revisando sus finanzas con tranquilidad y orden" width="600" height="750"/>
+            <div class="hero__badge-live">
+              <span class="dot"></span>
+              <span class="label" style="color:var(--color-text);">Acompañamiento personalizado</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SOBRE NOSOTROS — Presentación de la empresa
+         ========================================== -->
+    <section class="section section--alt" id="sobre" aria-labelledby="about-title">
+      <div class="container about__grid">
+
+        <div class="about__content reveal">
+          <h2 class="heading-lg" id="about-title">¿Quiénes somos?</h2>
+          <div class="about__divider"></div>
+          <p class="body-md" style="color:var(--color-text-secondary); margin-top:var(--space-md);">
+            <strong>Capital Smart</strong> es una marca enfocada en educación financiera y formación en marketing, respaldada legalmente por <strong>León Capital LLC</strong>. Ayudamos a personas a ordenar su vida financiera, mejorar su capacidad de ahorro y tomar decisiones más conscientes sobre sus gastos e inversiones.
+          </p>
+          <p class="body-md" style="color:var(--color-text-secondary);">
+            Enseñamos educación financiera de forma simple, práctica y aplicable a la vida real. Además, combinamos finanzas con formación en marketing para que puedas generar más oportunidades y aumentar tus ingresos.
+          </p>
+
+          <div style="display:flex; align-items:center; gap:var(--space-md); margin-top:var(--space-md);">
+            <div style="background:var(--color-gold); padding:var(--space-sm); border-radius:var(--radius-md); color:var(--color-black); display:flex; align-items:center; justify-content:center;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div>
+              <p class="label" style="color:var(--color-text);">Respaldo legal</p>
+              <p class="body-sm" style="color:var(--color-text-secondary);">León Capital LLC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__stats reveal reveal-delay-1">
+          <div class="stat-card" style="margin-top:var(--space-xl);">
+            <p class="stat-card__value">Desde cero</p>
+            <p class="stat-card__label">Educación para todos, sin experiencia previa</p>
+          </div>
+          <div class="stat-card stat-card--alt">
+            <p class="stat-card__value">100%</p>
+            <p class="stat-card__label">Enfoque en resultados aplicables a tu vida</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-card__value">Práctica</p>
+            <p class="stat-card__label">Contenido simple, directo y aplicable</p>
+          </div>
+          <div class="stat-card stat-card--dark">
+            <p class="stat-card__value">24/7</p>
+            <p class="stat-card__label stat-card__label">Acompañamiento personalizado</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICIOS — Los 5 servicios del formulario
+         ========================================== -->
+    <section class="section" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+
+        <div class="services__header reveal">
+          <h2 class="heading-lg" id="services-title">Formación a tu medida</h2>
+          <p class="body-md" style="color:var(--color-text-secondary); margin-top:var(--space-xs);">
+            Seleccioná el nivel de acompañamiento que necesitás para ordenar tus finanzas y mejorar tus ingresos.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Servicio 1 -->
+          <article class="card service-card reveal">
+            <div class="service-card__header">
+              <span class="label service-card__label">Individual</span>
+            </div>
+            <h3 class="service-card__title">Asesoría financiera 1 a 1</h3>
+            <p class="body-sm" style="color:var(--color-text-secondary);">
+              Trabajamos sobre tu situación real: ingresos, gastos, hábitos financieros y capacidad de ahorro. Construí un plan ordenado para manejar tu dinero con más criterio.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Tenés más claridad sobre tu situación financiera</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Detectás en qué estás perdiendo plata</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Salís con próximos pasos concretos</span>
+              </li>
+            </ul>
+            <a class="btn btn--outline" href="https://wa.me/#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+
+          <!-- Servicio 2 -->
+          <article class="card service-card reveal reveal-delay-1">
+            <div class="service-card__header">
+              <span class="label service-card__label">Programa</span>
+            </div>
+            <h3 class="service-card__title">Programa de educación financiera</h3>
+            <p class="body-sm" style="color:var(--color-text-secondary);">
+              Pensado para personas que quieren aprender desde cero a manejar mejor su dinero. Organización financiera, control de gastos, hábitos de ahorro e inversiones básicas.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Aprendés educación financiera desde cero</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Construís mejores hábitos financieros</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Guía clara para ordenar tu dinero</span>
+              </li>
+            </ul>
+            <a class="btn btn--outline" href="https://wa.me/#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+
+          <!-- Servicio 3 -->
+          <article class="card service-card reveal reveal-delay-2">
+            <div class="service-card__header">
+              <span class="label service-card__label">Personalizado</span>
+            </div>
+            <h3 class="service-card__title">Coaching financiero personalizado</h3>
+            <p class="body-sm" style="color:var(--color-text-secondary);">
+              Acompañamiento para sostener mejores hábitos con el dinero. Ahorrar más, gastar menos, ordenar deudas y construir disciplina financiera.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Trabajás sobre objetivos concretos</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Reducís gastos que no aportan valor</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Estrategia adaptada a tu caso</span>
+              </li>
+            </ul>
+            <a class="btn btn--outline" href="https://wa.me/#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+
+          <!-- Servicio 4 -->
+          <article class="card service-card reveal reveal-delay-1">
+            <div class="service-card__header">
+              <span class="label service-card__label">Negocios</span>
+            </div>
+            <h3 class="service-card__title">Formación en marketing y negocios digitales</h3>
+            <p class="body-sm" style="color:var(--color-text-secondary);">
+              Aprendé habilidades digitales para mejorar tus ingresos, vender mejor, comunicar tus servicios o desarrollar proyectos propios.
+            </p>
+            <ul class="service-card__list">
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Habilidades de marketing aplicables</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Posicionamiento y comunicación clara</span>
+              </li>
+              <li class="service-card__item">
+                <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Generás más oportunidades</span>
+              </li>
+            </ul>
+            <a class="btn btn--outline" href="https://wa.me/#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </article>
+
+          <!-- Servicio 5 — Combo -->
+          <article class="card service-card card--featured reveal reveal-delay-2" style="grid-column:1/-1;">
+            <div class="service-card__header">
+              <span class="label service-card__label" style="background:var(--color-gold); color:var(--color-black); padding:2px 8px; border-radius:var(--radius-full);">Más completo</span>
+              <span class="label service-card__label">Combo</span>
+            </div>
+            <h3 class="service-card__title">Combo: Educación financiera + Marketing</h3>
+            <p class="body-sm" style="color:var(--color-text-secondary); max-width:640px;">
+              El combo más solicitado. Unís educación financiera y formación en marketing para ordenar tu dinero, mejorar tu capacidad de ahorro y aprender herramientas para aumentar tus ingresos. Una visión completa sobre dinero, ingresos y crecimiento personal.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:var(--space-sm); margin-top:var(--space-sm);">
+              <ul class="service-card__list">
+                <li class="service-card__item">
+                  <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Ordenás tus finanzas y mejorás tu ahorro</span>
+                </li>
+                <li class="service-card__item">
+                  <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Aprendés qué hacer con el capital extra</span>
+                </li>
+              </ul>
+              <ul class="service-card__list">
+                <li class="service-card__item">
+                  <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Aprendés marketing para mejorar ingresos</span>
+                </li>
+                <li class="service-card__item">
+                  <svg class="service-card__check" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span>Aplicás lo aprendido a tu vida o emprendimiento</span>
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener" style="align-self:flex-start; margin-top:var(--space-md);">Consultar por WhatsApp</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DIFERENCIALES — Por qué elegir Capital Smart
+         ========================================== -->
+    <section class="section section--dark" id="beneficios" aria-labelledby="diff-title">
+      <div class="container">
+
+        <div class="differentials__header reveal">
+          <h2 class="heading-lg" id="diff-title" style="color:var(--color-white);">¿Por qué elegir Capital Smart?</h2>
+          <p class="body-md" style="color:var(--color-text-light);">Educación financiera práctica y marketing aplicado a tu vida real.</p>
+        </div>
+
+        <div class="differentials__grid">
+
+          <div class="differential reveal">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Desde cero</h3>
+              <p class="differential__text">No necesitás experiencia previa. Enseñamos desde lo básico hasta lo que podés aplicar en tu día a día.</p>
+            </div>
+          </div>
+
+          <div class="differential reveal reveal-delay-1">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Acompañamiento personalizado</h3>
+              <p class="differential__text">Cada persona tiene una situación diferente. Trabajamos con estrategias adaptadas a tu caso real.</p>
+            </div>
+          </div>
+
+          <div class="differential reveal reveal-delay-2">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Enfoque práctico</h3>
+              <p class="differential__text">Nada de teoría complicada. Todo está pensado para que puedas aplicar lo aprendido de forma inmediata.</p>
+            </div>
+          </div>
+
+          <div class="differential reveal reveal-delay-1">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20V10M18 20V4M6 20v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Mentalidad financiera</h3>
+              <p class="differential__text">No solo aprendés a manejar el dinero, sino a pensar de forma estratégica sobre tu crecimiento financiero.</p>
+            </div>
+          </div>
+
+          <div class="differential reveal reveal-delay-2">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Finanzas + Marketing</h3>
+              <p class="differential__text">Combinamos educación financiera con habilidades comerciales para que puedas aumentar tus ingresos.</p>
+            </div>
+          </div>
+
+          <div class="differential reveal reveal-delay-3">
+            <div class="differential__icon">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="differential__title">Respaldo legal</h3>
+              <p class="differential__text">Detrás de Capital Smart está León Capital LLC. Seguridad y profesionalismo en cada paso.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ — Preguntas frecuentes
+         ========================================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+
+        <div class="faq__header reveal">
+          <h2 class="heading-lg" id="faq-title">Preguntas frecuentes</h2>
+          <p class="body-md" style="color:var(--color-text-secondary); margin-top:var(--space-xs);">
+            Resolvemos las dudas más comunes antes de que las tengas.
+          </p>
+        </div>
+
+        <div class="faq__list">
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>¿Necesito experiencia previa para empezar?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                No. La idea es que puedas aprender desde cero a ordenar tus finanzas y tomar mejores decisiones con tu dinero.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-1">
+            <button class="faq__question" aria-expanded="false">
+              <span>¿Esto es asesoramiento financiero personalizado de inversión?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                No. El enfoque es educativo. Buscamos brindar herramientas de educación financiera para que puedas entender mejor cómo administrar tu dinero.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-2">
+            <button class="faq__question" aria-expanded="false">
+              <span>¿Me van a decir exactamente en qué invertir?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                No necesariamente. El objetivo es que aprendas criterios, hábitos y conceptos para tomar mejores decisiones, no que dependas de una recomendación puntual.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-3">
+            <button class="faq__question" aria-expanded="false">
+              <span>¿Sirve si tengo pocos ingresos?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                Sí. Justamente, cuanto antes aprendas a ordenar tus finanzas, mejor. No se trata solo de cuánto ganás, sino de cómo administrás lo que tenés.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item reveal reveal-delay-4">
+            <button class="faq__question" aria-expanded="false">
+              <span>¿También enseñan marketing?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <div class="faq__answer-inner">
+                Sí. Además de educación financiera, también ofrecemos formación en marketing y negocios digitales para ayudar a las personas a desarrollar habilidades que puedan mejorar sus ingresos.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CTA FINAL — Único llamado a la acción
+         ========================================== -->
+    <section class="section cta-final" aria-labelledby="cta-title">
+      <div class="container cta-final__inner reveal">
+        <h2 class="heading-lg" id="cta-title">¿Listo para ordenar tus finanzas?</h2>
+        <p class="body-lg" style="color:var(--color-text-secondary);">
+          No dejes para mañana lo que podés empezar a mejorar hoy. Escribinos y te ayudamos a dar el primer paso.
+        </p>
+        <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener" style="font-size:var(--text-xl); padding:clamp(1rem,2vw,1.25rem) clamp(2rem,4vw,3rem); margin-top:var(--space-md);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" fill="currentColor"/></svg>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+
+      <div>
+        <div class="footer__brand">
+          <img src="logo.png" alt="Logo Capital Smart" width="36" height="36"/>
+          <span>Capital Smart</span>
+        </div>
+        <p class="footer__tagline" style="margin-top:var(--space-sm);">
+          Educación financiera práctica y formación en marketing.
+        </p>
+      </div>
+
+      <div>
+        <p class="footer__section-title">Legal</p>
+        <p class="footer__text">Marca comercial de León Capital LLC.</p>
+        <p class="footer__text">Todos los derechos reservados.</p>
+        <div class="footer__links" style="margin-top:var(--space-sm);">
+          <a class="footer__link" href="#">Términos y Condiciones</a>
+          <a class="footer__link" href="#">Privacidad</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer__section-title">Contacto</p>
+        <div class="footer__contact">
+          <a class="footer__contact-item" href="https://wa.me/#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>[PENDIENTE] WhatsApp</span>
+          </a>
+          <a class="footer__contact-item" href="mailto:" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 7l-10 7L2 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>[PENDIENTE] Email</span>
+          </a>
+          <a class="footer__contact-item" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            <span>[PENDIENTE] Instagram</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
