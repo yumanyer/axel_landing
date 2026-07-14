@@ -8,7 +8,7 @@
   <title>Capital Smart — Educación Financiera y Formación en Marketing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@600&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@600&family=Lexend:wght@400;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
   <link rel="icon" type="image/png" href="logo.png"/>
 </head>
@@ -23,9 +23,10 @@
       <span>Capital Smart</span>
     </a>
 
-    <nav class="header__nav" aria-label="Navegación principal">
+      <nav class="header__nav" aria-label="Navegación principal">
       <a class="header__link" href="#sobre">Sobre nosotros</a>
       <a class="header__link" href="#servicios">Servicios</a>
+      <a class="header__link" href="#testimonios">Testimonios</a>
       <a class="header__link" href="#faq">FAQ</a>
       <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
@@ -41,6 +42,7 @@
   <nav class="nav-mobile" aria-label="Menú móvil">
     <a class="header__link" href="#sobre">Sobre nosotros</a>
     <a class="header__link" href="#servicios">Servicios</a>
+    <a class="header__link" href="#testimonios">Testimonios</a>
     <a class="header__link" href="#faq">FAQ</a>
     <a class="btn btn--primary" href="https://wa.me/#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
   </nav>
@@ -399,6 +401,114 @@
     </section>
 
     <!-- ==========================================
+         TESTIMONIOS — Evidencia de la comunidad
+         ========================================== -->
+    <section class="evidence-section section" id="testimonios" aria-labelledby="evidence-heading">
+      <div class="container">
+        <div class="evidence-header">
+          <span class="evidence-eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Comunidad activa</span>
+          <h2 id="evidence-heading" class="heading-lg">Más que palabras, <em>evidencia</em></h2>
+          <p class="body-md" style="color:var(--color-text-secondary);">Workshops, mentorías y conversaciones reales de quienes ya forman parte. Sin relatos armados: capturas, momentos y resultados tal como pasaron.</p>
+        </div>
+
+        <div class="mosaic" id="mosaic" role="list">
+
+          <!-- 1: evento grande -->
+          <article class="evidence-card span-3c row-2" role="listitem" tabindex="0"
+            data-title="Workshop presencial — Arbitraje aplicado"
+            data-desc="Encuentro mensual donde repasamos casos reales de arbitraje y resolvemos dudas en vivo con la comunidad."
+            data-date="Junio 2026">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=900&q=60')" role="img" aria-label="Workshop presencial con asistentes en una sala"></div>
+            <span class="card-tag">🏆 Workshop</span>
+            <span class="card-caption">Workshop presencial<span>+40 asistentes · La Plata</span></span>
+          </article>
+
+          <!-- 2: chat -->
+          <article class="evidence-card chat span-2c" role="listitem" tabindex="0"
+            data-title="Conversación con un alumno"
+            data-desc="Intercambio real por WhatsApp durante el seguimiento post-mentoría."
+            data-date="Mayo 2026">
+            <span class="card-tag">💬 Chat</span>
+            <div class="chat-bubble in">¿Puedo aplicar la estrategia que vimos hoy en el mercado spot?</div>
+            <div class="chat-bubble out">Sí, dale prioridad al checklist de riesgo que armamos en la clase 🙌</div>
+            <span class="chat-meta">Visto 14:32</span>
+          </article>
+
+          <!-- 3: reel -->
+          <article class="evidence-card" role="listitem" tabindex="0"
+            data-title="Reel: detrás de escena de una mentoría"
+            data-desc="Un vistazo a cómo se preparan las sesiones grupales de mentoría."
+            data-date="Abril 2026">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=60')" role="img" aria-label="Persona grabando contenido de video"></div>
+            <span class="card-tag">🎥 Reel</span>
+            <span class="play-badge" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 2l11 6-11 6z"/></svg></span>
+          </article>
+
+          <!-- 4: mentoria -->
+          <article class="evidence-card row-2" role="listitem" tabindex="0"
+            data-title="Mentoría 1 a 1"
+            data-desc="Sesiones personalizadas de seguimiento para alumnos que avanzan en el programa."
+            data-date="Marzo 2026">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=60')" role="img" aria-label="Mentoría personalizada entre dos personas"></div>
+            <span class="card-tag">🎓 Mentoría</span>
+            <span class="card-caption">Seguimiento personalizado</span>
+          </article>
+
+          <!-- 5: resultado (sin montos, foco en progreso) -->
+          <article class="evidence-card span-2c" role="listitem" tabindex="0"
+            data-title="Progreso de un alumno"
+            data-desc="Reconocimiento por completar el programa de formación y aplicar lo aprendido de forma consistente."
+            data-date="Marzo 2026">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=60')" role="img" aria-label="Persona revisando gráficos en una notebook"></div>
+            <span class="card-tag">📈 Progreso</span>
+            <span class="card-caption">De la teoría a la práctica<span>Programa completo · 8 semanas</span></span>
+          </article>
+
+          <!-- 6: chat corto -->
+          <article class="evidence-card chat" role="listitem" tabindex="0"
+            data-title="Agradecimiento de un alumno"
+            data-desc="Mensaje recibido luego de finalizar el módulo de gestión de riesgo."
+            data-date="Febrero 2026">
+            <span class="card-tag">💬 Chat</span>
+            <div class="chat-bubble in">Recién terminé el módulo, se entendió todo mucho mejor de lo que esperaba</div>
+            <span class="chat-meta">Visto 09:14</span>
+          </article>
+
+          <!-- 7: evento -->
+          <article class="evidence-card span-2c" role="listitem" tabindex="0"
+            data-title="Encuentro de comunidad"
+            data-desc="Reunión mensual abierta para socializar dudas y experiencias entre alumnos."
+            data-date="Enero 2026">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60')" role="img" aria-label="Encuentro de comunidad"></div>
+            <span class="card-tag">📸 Evento</span>
+            <span class="card-caption">Encuentro de comunidad</span>
+          </article>
+
+          <!-- 8: reel vertical -->
+          <article class="evidence-card row-2" role="listitem" tabindex="0"
+            data-title="Reel: testimonio en video"
+            data-desc="Un alumno cuenta su experiencia en el programa en sus propias palabras."
+            data-date="Diciembre 2025">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=60')" role="img" aria-label="Persona hablando frente a cámara"></div>
+            <span class="card-tag">🎥 Reel</span>
+            <span class="play-badge" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 2l11 6-11 6z"/></svg></span>
+          </article>
+
+          <!-- 9: workshop -->
+          <article class="evidence-card" role="listitem" tabindex="0"
+            data-title="Clase presencial"
+            data-desc="Sesión práctica sobre gestión de riesgo en operaciones de arbitraje."
+            data-date="Noviembre 2025">
+            <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1531482615713-2afd69097998?w=700&q=60')" role="img" aria-label="Clase presencial con pizarra"></div>
+            <span class="card-tag">🏆 Workshop</span>
+            <span class="card-caption">Clase presencial</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
          FAQ — Preguntas frecuentes
          ========================================== -->
     <section class="section" id="faq" aria-labelledby="faq-title">
@@ -539,6 +649,19 @@
 
     </div>
   </footer>
+
+  <!-- MODAL TESTIMONIOS -->
+  <div class="evidence-modal" id="evidenceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="evidence-modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="evidence-modal-media" id="modalMedia"></div>
+      <div class="evidence-modal-body">
+        <span class="evidence-modal-date" id="modalDate"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js" defer></script>
 </body>

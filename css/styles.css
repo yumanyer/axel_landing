@@ -990,3 +990,331 @@ ul, ol {
 .skip-link:focus {
   top: var(--space-sm);
 }
+
+/* =========================================================
+   TESTIMONIOS — Sección de Evidencia
+   ========================================================= */
+
+.evidence-section {
+  background-color: var(--color-bg);
+}
+
+.evidence-header {
+  max-width: 780px;
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+}
+
+.evidence-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: var(--space-md);
+}
+
+.evidence-eyebrow .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.6);
+  animation: pulse-gold 2.4s infinite;
+}
+
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(201, 168, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
+}
+
+.evidence-header h2 em {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  color: var(--color-gold);
+  font-weight: 400;
+}
+
+/* ---------- MOSAICO EDITORIAL ---------- */
+.mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 90px;
+  gap: var(--space-sm);
+}
+
+.evidence-card {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  cursor: pointer;
+  transition: transform var(--transition-slow), box-shadow var(--transition-normal), opacity var(--transition-slow);
+}
+
+.evidence-card:hover,
+.evidence-card:focus-visible {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: var(--shadow-gold);
+  z-index: 2;
+}
+
+.evidence-card:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* tamaños del mosaico irregular */
+.span-2c { grid-column: span 2; }
+.span-3c { grid-column: span 3; }
+.span-4c { grid-column: span 4; }
+.row-2 { grid-row: span 2; }
+.row-3 { grid-row: span 3; }
+
+/* imagen / media base */
+.card-media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform var(--transition-slow);
+}
+
+.evidence-card:hover .card-media {
+  transform: scale(1.06);
+}
+
+.card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.7) 100%);
+}
+
+.card-tag {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(13, 13, 13, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--color-gold-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-caption {
+  position: absolute;
+  left: var(--space-sm);
+  right: var(--space-sm);
+  bottom: var(--space-sm);
+  z-index: 2;
+  font-size: 0.85rem;
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.card-caption span {
+  display: block;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.7);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* ---------- variante: tarjeta tipo chat ---------- */
+.evidence-card.chat {
+  background: var(--color-bg-alt);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.chat-bubble {
+  max-width: 85%;
+  padding: 8px 12px;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.chat-bubble.in {
+  align-self: flex-start;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-bottom-left-radius: 3px;
+}
+
+.chat-bubble.out {
+  align-self: flex-end;
+  background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+  color: var(--color-black);
+  font-weight: 600;
+  border-bottom-right-radius: 3px;
+}
+
+.chat-meta {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+  text-align: right;
+  margin-top: 2px;
+}
+
+/* ---------- variante: reel / video ---------- */
+.play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(13, 13, 13, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: transform var(--transition-normal);
+}
+
+.evidence-card:hover .play-badge {
+  transform: translate(-50%,-50%) scale(1.1);
+}
+
+.play-badge svg {
+  fill: var(--color-gold-light);
+  margin-left: 3px;
+}
+
+/* ---------- MODAL ---------- */
+.evidence-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.evidence-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.evidence-modal-content {
+  max-width: 720px;
+  width: 100%;
+  max-height: 86vh;
+  background: var(--color-white);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  transform: scale(0.94);
+  transition: transform var(--transition-normal);
+  position: relative;
+}
+
+.evidence-modal.is-open .evidence-modal-content {
+  transform: scale(1);
+}
+
+.evidence-modal-media {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+}
+
+.evidence-modal-body {
+  padding: var(--space-lg);
+}
+
+.evidence-modal-body h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  margin: 0 0 var(--space-xs);
+  color: var(--color-black);
+}
+
+.evidence-modal-body p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  margin: 0 0 var(--space-sm);
+}
+
+.evidence-modal-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(13, 13, 13, 0.6);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition-normal);
+}
+
+.modal-close:hover {
+  background: var(--color-gold-dark);
+}
+
+/* ---------- RESPONSIVE TESTIMONIOS ---------- */
+@media (max-width: 980px) {
+  .mosaic { grid-template-columns: repeat(4, 1fr); }
+  .span-4c { grid-column: span 4; }
+  .span-3c { grid-column: span 4; }
+  .span-2c { grid-column: span 2; }
+}
+
+@media (max-width: 640px) {
+  .mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 130px; }
+  .span-4c, .span-3c, .span-2c { grid-column: span 2; }
+  .row-3 { grid-row: span 2; }
+  .evidence-modal-media { height: 240px; }
+}

@@ -65,6 +65,67 @@
     }
   });
 
+  /* --- TESTIMONIOS — Mosaico y Modal --- */
+  var cards = document.querySelectorAll('.evidence-card');
+  var modal = document.getElementById('evidenceModal');
+  var modalMedia = document.getElementById('modalMedia');
+  var modalTitle = document.getElementById('modalTitle');
+  var modalDesc = document.getElementById('modalDesc');
+  var modalDate = document.getElementById('modalDate');
+  var modalClose = document.getElementById('modalClose');
+  var lastFocused = null;
+
+  if (modal) {
+    var openModal = function(card) {
+      lastFocused = document.activeElement;
+      var media = card.querySelector('.card-media');
+      
+      if (media) {
+        modalMedia.style.backgroundImage = media.style.backgroundImage;
+        modalMedia.style.display = 'block';
+      } else {
+        modalMedia.style.display = 'none';
+      }
+
+      modalTitle.textContent = card.dataset.title || '';
+      modalDesc.textContent = card.dataset.desc || '';
+      modalDate.textContent = card.dataset.date || '';
+      
+      modal.classList.add('is-open');
+      modalClose.focus();
+      document.body.style.overflow = 'hidden';
+    };
+
+    var closeModal = function() {
+      modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    };
+
+    cards.forEach(function(card) {
+      card.addEventListener('click', function() { openModal(card); });
+      card.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(card);
+        }
+      });
+      /* Agregar clase reveal para el observer existente */
+      card.classList.add('reveal');
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e) { 
+      if (e.target === modal) closeModal(); 
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+  }
+
   /* --- Intersection Observer for reveal animations --- */
   if ('IntersectionObserver' in window) {
     var observerOptions = {
