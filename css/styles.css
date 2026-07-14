@@ -625,6 +625,41 @@ ul, ol {
   color: var(--color-gold);
 }
 
+/* Service Personalizado */
+.service-card--featured {
+    position: relative;
+    border: 2px solid var(--color-gold);
+    box-shadow: var(--shadow-gold);
+    transform: translateY(-6px);
+}
+
+.service-card--featured:hover {
+    transform: translateY(-10px);
+}
+
+.service-card__badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    padding: .35rem .8rem;
+
+    background: var(--color-gold);
+    color: var(--color-black);
+
+    font-size: .75rem;
+    font-weight: 600;
+
+    border-radius: var(--radius-full);
+
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.service-card--featured .service-card__title {
+    color: var(--color-gold-dark);
+}
+
 /* --- Differentials --- */
 .differentials__header {
   margin-bottom: var(--space-xl);
@@ -1043,7 +1078,7 @@ ul, ol {
 .mosaic {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 90px;
+  grid-auto-rows: 110px;
   gap: var(--space-sm);
 }
 
