@@ -78,18 +78,18 @@
   if (modal) {
     var openModal = function(card) {
       lastFocused = document.activeElement;
-      var media = card.querySelector('.card-media');
-      
-      if (media) {
-        modalMedia.style.backgroundImage = media.style.backgroundImage;
-        modalMedia.style.display = 'block';
-      } else {
-        modalMedia.style.display = 'none';
-      }
 
-      modalTitle.textContent = card.dataset.title || '';
-      modalDesc.textContent = card.dataset.desc || '';
-      modalDate.textContent = card.dataset.date || '';
+      // Valores por defecto para todas las tarjetas
+      var title = card.dataset.title || "Nuestra Comunidad";
+      var desc = card.dataset.desc || "Formá parte de un grupo de personas que, como vos, buscan tomar mejores decisiones financieras y potenciar sus ingresos. En Capital Smart, el acompañamiento y la experiencia compartida son la clave del éxito.";
+      var image = card.dataset.image || "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60')";
+      var date = card.dataset.date || "Comunidad Activa";
+
+      modalMedia.style.backgroundImage = image;
+      modalMedia.style.display = 'block';
+      modalTitle.textContent = title;
+      modalDesc.textContent = desc;
+      modalDate.textContent = date;
       
       modal.classList.add('is-open');
       modalClose.focus();
