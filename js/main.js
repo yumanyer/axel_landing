@@ -65,66 +65,7 @@
     }
   });
 
-  /* --- TESTIMONIOS — Mosaico y Modal --- */
-  var cards = document.querySelectorAll('.evidence-card');
-  var modal = document.getElementById('evidenceModal');
-  var modalMedia = document.getElementById('modalMedia');
-  var modalTitle = document.getElementById('modalTitle');
-  var modalDesc = document.getElementById('modalDesc');
-  var modalDate = document.getElementById('modalDate');
-  var modalClose = document.getElementById('modalClose');
-  var lastFocused = null;
-
-  if (modal) {
-    var openModal = function(card) {
-      lastFocused = document.activeElement;
-
-      // Valores por defecto para todas las tarjetas
-      var title = card.dataset.title || "Nuestra Comunidad";
-      var desc = card.dataset.desc || "Formá parte de un grupo de personas que, como vos, buscan tomar mejores decisiones financieras y potenciar sus ingresos. En Capital Smart, el acompañamiento y la experiencia compartida son la clave del éxito.";
-      var image = card.dataset.image || "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=60')";
-      var date = card.dataset.date || "Comunidad Activa";
-
-      modalMedia.style.backgroundImage = image;
-      modalMedia.style.display = 'block';
-      modalTitle.textContent = title;
-      modalDesc.textContent = desc;
-      modalDate.textContent = date;
-      
-      modal.classList.add('is-open');
-      modalClose.focus();
-      document.body.style.overflow = 'hidden';
-    };
-
-    var closeModal = function() {
-      modal.classList.remove('is-open');
-      document.body.style.overflow = '';
-      if (lastFocused) lastFocused.focus();
-    };
-
-    cards.forEach(function(card) {
-      card.addEventListener('click', function() { openModal(card); });
-      card.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openModal(card);
-        }
-      });
-      /* Agregar clase reveal para el observer existente */
-      card.classList.add('reveal');
-    });
-
-    modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', function(e) { 
-      if (e.target === modal) closeModal(); 
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && modal.classList.contains('is-open')) {
-        closeModal();
-      }
-    });
-  }
+  /* --- TESTIMONIOS --- La clase reveal se aplica automáticamente en HTML --- */
 
   /* --- Intersection Observer for reveal animations --- */
   if ('IntersectionObserver' in window) {
