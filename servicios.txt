@@ -1,0 +1,44 @@
+# Servicios — Capital Smart
+
+## 1. Asesoría Financiera 1 a 1
+
+ Descripción
+Analizamos tu situación financiera de forma personalizada para ayudarte a organizar mejor tus ingresos, optimizar tus gastos y construir un plan de acción adaptado a tus objetivos.
+
+
+Valor:$500
+
+
+---
+
+## 2. Programa de Educación Financiera
+
+ Descripción
+Un programa pensado para quienes quieren aprender desde cero a administrar su dinero, desarrollar hábitos financieros saludables y tomar mejores decisiones.
+
+Valor:$1000
+---
+
+## 3. Coaching Financiero Personalizado
+
+ Descripción
+Recibí un acompañamiento continuo para mejorar tus hábitos financieros, mantener el foco en tus objetivos y sostener cambios reales en el tiempo.
+
+Valor:$1500
+
+---
+
+## 4. Formación en Marketing y Negocios Digitales
+
+ Descripción
+Desarrollá habilidades de marketing y comunicación para potenciar tu emprendimiento, mejorar tus ventas y generar nuevas oportunidades de ingresos.
+
+Valor:$2000
+
+---
+
+## 5. Programa Integral Capital Smart
+
+ Descripción
+Nuestra propuesta más completa. Combiná educación financiera y marketing para aprender a administrar mejor tu dinero mientras desarrollás habilidades que te permitan generar más ingresos.
+Valor:$2500
